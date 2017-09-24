@@ -1,22 +1,31 @@
 package ua.kek.dobriy_kot.startvk.dagger.componet;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
-import ua.kek.dobriy_kot.startvk.MainActivity;
-import ua.kek.dobriy_kot.startvk.dagger.module.AplicationModule;
+import ua.kek.dobriy_kot.startvk.dagger.module.ApplicationModule;
 import ua.kek.dobriy_kot.startvk.dagger.module.FragmentManagerModule;
 import ua.kek.dobriy_kot.startvk.dagger.module.RestClientModule;
 import ua.kek.dobriy_kot.startvk.ui.activity.BaseActivity;
-import ua.kek.dobriy_kot.startvk.ui.fragmnet.BaseFragmnet;
+import ua.kek.dobriy_kot.startvk.ui.activity.MainActivity;
+import ua.kek.dobriy_kot.startvk.ui.fragmnet.NewsFeedFragment;
+import ua.kek.dobriy_kot.startvk.ui.holder.NewsItemBodyHolder;
+import ua.kek.dobriy_kot.startvk.ui.holder.NewsItemFooterHolder;
+import ua.kek.dobriy_kot.startvk.ui.holder.NewsItemHeaderHolder;
 
-/**
- * Created by dobriy_kot on 11.09.17.
- */
-@Component(modules = {AplicationModule.class, FragmentManagerModule.class, RestClientModule.class})
-public class AplicationComponent {
 
-//    void inject(BaseActivity);
-//    void inject(MainActivity);
-//
-//    void inject(BaseFragmnet);
+@Singleton
+@Component(modules = {ApplicationModule.class, FragmentManagerModule.class, RestClientModule.class})
+public interface ApplicationComponent {
 
+    void inject(BaseActivity activity);
+    void inject(MainActivity activity);
+
+    void inject(NewsFeedFragment baseFragment);
+
+
+    void inject(NewsItemBodyHolder bodyHolder);
+    void inject(NewsItemFooterHolder footerHolder);
+
+    void inject(NewsItemHeaderHolder headerHolder);
 }

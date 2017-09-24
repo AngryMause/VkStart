@@ -1,5 +1,5 @@
 
-package com.example;
+package ua.kek.dobriy_kot.startvk.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
