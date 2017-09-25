@@ -1,7 +1,7 @@
 package ua.kek.dobriy_kot.startvk.model.view.counter;
 
 
-import ua.kek.dobriy_kot.startvk.model.Reposts;
+import ua.kek.dobriy_kot.startvk.entity.Reposts;
 
 public class RepostCounterViewModel extends CounterViewModel {
 

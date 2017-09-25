@@ -16,9 +16,6 @@ import ua.kek.dobriy_kot.startvk.R;
 import ua.kek.dobriy_kot.startvk.common.manager.MyFragmentManager;
 import ua.kek.dobriy_kot.startvk.ui.fragmnet.BaseFragment;
 
-/**
- * Created by dobriy_kot on 11.09.17.
- */
 
 public abstract class BaseActivity extends MvpAppCompatActivity {
 
@@ -69,8 +66,8 @@ public abstract class BaseActivity extends MvpAppCompatActivity {
     }
 
     private void setToolbarTittle(String tittle) {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(tittle);
+        if (toolbar != null) {
+            toolbar.setTitle(tittle);
         }
     }
 

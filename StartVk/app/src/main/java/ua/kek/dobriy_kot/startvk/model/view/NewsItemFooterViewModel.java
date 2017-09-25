@@ -3,7 +3,7 @@ package ua.kek.dobriy_kot.startvk.model.view;
 
 import android.view.View;
 
-import ua.kek.dobriy_kot.startvk.model.WallItem;
+import ua.kek.dobriy_kot.startvk.entity.WallItem;
 import ua.kek.dobriy_kot.startvk.model.view.counter.CommentCounterViewModel;
 import ua.kek.dobriy_kot.startvk.model.view.counter.LikeCounterViewModel;
 import ua.kek.dobriy_kot.startvk.model.view.counter.RepostCounterViewModel;

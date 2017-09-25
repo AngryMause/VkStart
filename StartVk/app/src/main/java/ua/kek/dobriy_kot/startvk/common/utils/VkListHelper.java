@@ -4,8 +4,8 @@ package ua.kek.dobriy_kot.startvk.common.utils;
 
 import java.util.List;
 
-import ua.kek.dobriy_kot.startvk.model.Owner;
-import ua.kek.dobriy_kot.startvk.model.WallItem;
+import ua.kek.dobriy_kot.startvk.entity.Owner;
+import ua.kek.dobriy_kot.startvk.entity.WallItem;
 import ua.kek.dobriy_kot.startvk.rest.model.response.ItemWithSendersResponse;
 
 public class VkListHelper {

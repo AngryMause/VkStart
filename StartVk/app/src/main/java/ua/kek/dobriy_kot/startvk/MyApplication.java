@@ -8,9 +8,6 @@ import ua.kek.dobriy_kot.startvk.dagger.componet.ApplicationComponent;
 import ua.kek.dobriy_kot.startvk.dagger.componet.DaggerApplicationComponent;
 import ua.kek.dobriy_kot.startvk.dagger.module.ApplicationModule;
 
-/**
- * Created by dobriy_kot on 10.09.17.
- */
 
 public class MyApplication extends Application {
 

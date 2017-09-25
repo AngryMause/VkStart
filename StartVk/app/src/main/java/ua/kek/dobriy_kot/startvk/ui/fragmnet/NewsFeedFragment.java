@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,7 @@ import retrofit2.Response;
 import ua.kek.dobriy_kot.startvk.MyApplication;
 import ua.kek.dobriy_kot.startvk.R;
 import ua.kek.dobriy_kot.startvk.common.utils.VkListHelper;
-import ua.kek.dobriy_kot.startvk.model.WallItem;
+import ua.kek.dobriy_kot.startvk.entity.WallItem;
 import ua.kek.dobriy_kot.startvk.model.view.BaseViewModel;
 import ua.kek.dobriy_kot.startvk.model.view.NewsItemBodyViewModel;
 import ua.kek.dobriy_kot.startvk.model.view.NewsItemFooterViewModel;
@@ -26,10 +25,6 @@ import ua.kek.dobriy_kot.startvk.model.view.NewsItemHeaderViewModel;
 import ua.kek.dobriy_kot.startvk.rest.api.WallApi;
 import ua.kek.dobriy_kot.startvk.rest.model.reques.WallGetRequestModel;
 import ua.kek.dobriy_kot.startvk.rest.model.response.WallGetResponse;
-
-/**
- * Created by dobriy_kot on 15.09.17.
- */
 
 public class NewsFeedFragment extends BaseFeedFragment {
 
@@ -40,6 +35,8 @@ public class NewsFeedFragment extends BaseFeedFragment {
 
     @Inject
     WallApi mWallApi;
+
+
 
 
     public NewsFeedFragment() {
@@ -73,14 +70,14 @@ public class NewsFeedFragment extends BaseFeedFragment {
             public void onResponse(Call<WallGetResponse> call, Response<WallGetResponse> response) {
 
                 List<WallItem> wallItemList = VkListHelper.getWallList(response.body().response);
-                List<BaseViewModel> list = new ArrayList<BaseViewModel>();
+                List<BaseViewModel> list = new ArrayList<>();
                 for (WallItem wallItem : wallItemList) {
                     list.add(new NewsItemHeaderViewModel(wallItem));
                     list.add(new NewsItemBodyViewModel(wallItem));
                     list.add(new NewsItemFooterViewModel(wallItem));
                 }
                 mAdapter.addItems(list);
-                Toast.makeText(getActivity(), "Likes: " + response.body().response.getItems().get(0).getLikes().getCount(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity(), "Likes: " + response.body().response.getItems().get(0).getLikes().getCount(), Toast.LENGTH_LONG).show();
             }
 
             @Override

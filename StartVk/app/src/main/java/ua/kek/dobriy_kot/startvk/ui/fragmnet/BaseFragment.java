@@ -14,9 +14,6 @@ import com.arellomobile.mvp.MvpAppCompatFragment;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-/**
- * Created by dobriy_kot on 11.09.17.
- */
 
 public abstract class BaseFragment extends MvpAppCompatFragment {
 

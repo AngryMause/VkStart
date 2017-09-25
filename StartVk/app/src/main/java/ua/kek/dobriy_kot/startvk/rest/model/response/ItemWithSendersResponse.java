@@ -3,9 +3,9 @@ package ua.kek.dobriy_kot.startvk.rest.model.response;
 import java.util.ArrayList;
 import java.util.List;
 
-import ua.kek.dobriy_kot.startvk.model.Group;
-import ua.kek.dobriy_kot.startvk.model.Owner;
-import ua.kek.dobriy_kot.startvk.model.Profile;
+import ua.kek.dobriy_kot.startvk.entity.Group;
+import ua.kek.dobriy_kot.startvk.entity.Owner;
+import ua.kek.dobriy_kot.startvk.entity.Profile;
 
 public class ItemWithSendersResponse<T> extends BaseItemResponse<T> {
     private List<Profile> profiles = new ArrayList<>();

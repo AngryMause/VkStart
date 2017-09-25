@@ -7,9 +7,7 @@ import dagger.Provides;
 import ua.kek.dobriy_kot.startvk.rest.RestClient;
 import ua.kek.dobriy_kot.startvk.rest.api.WallApi;
 
-/**
- * Created by dobriy_kot on 11.09.17.
- */
+
 @Module
 public class RestClientModule {
 

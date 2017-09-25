@@ -28,8 +28,8 @@ public class NewsItemBodyHolder extends BaseViewHolder<NewsItemBodyViewModel> {
         super(itemView);
         MyApplication.getApplicationComponent().inject(this);
 
-        tvText = (TextView) itemView.findViewById(R.id.tv_text);
-        tvAttachments = (TextView) itemView.findViewById(R.id.tv_attachments);
+        tvText =  itemView.findViewById(R.id.tv_text);
+        tvAttachments =  itemView.findViewById(R.id.tv_attachments);
 
         if (tvAttachments != null) {
             tvAttachments.setTypeface(mFontGoogle);

@@ -2,7 +2,7 @@ package ua.kek.dobriy_kot.startvk.model.view.counter;
 
 
 
-import ua.kek.dobriy_kot.startvk.model.Comments;
+import ua.kek.dobriy_kot.startvk.entity.Comments;
 
 public class CommentCounterViewModel extends CounterViewModel{
 

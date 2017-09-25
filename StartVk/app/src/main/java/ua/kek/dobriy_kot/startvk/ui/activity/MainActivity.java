@@ -22,23 +22,20 @@ import ua.kek.dobriy_kot.startvk.ui.fragmnet.NewsFeedFragment;
 
 public class MainActivity extends BaseActivity implements MainView {
 
-
-//   @BindView(R.id.mainTextView32)
-    TextView mainText;
-
-
     @InjectPresenter
     MainPresenter mainPresenter;
 
     @Inject
     WallApi wallApi;
+//    @BindView(R.id.main_tv1)
+    TextView mainTextView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainPresenter.checkAuth();
-        mainText= (TextView) findViewById(R.id.mainTextView32);
+//        mainText= (TextView) findViewById(R.id.main_tv1);
         MyApplication.getApplicationComponent().inject(this);
 
 

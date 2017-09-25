@@ -3,7 +3,7 @@ package ua.kek.dobriy_kot.startvk.model.view.counter;
 
 
 
-import ua.kek.dobriy_kot.startvk.model.Likes;
+import ua.kek.dobriy_kot.startvk.entity.Likes;
 
 public class LikeCounterViewModel extends CounterViewModel{
 

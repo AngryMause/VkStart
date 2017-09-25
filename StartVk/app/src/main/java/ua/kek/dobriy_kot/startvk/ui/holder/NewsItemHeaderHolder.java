@@ -9,27 +9,28 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import ua.kek.dobriy_kot.startvk.MyApplication;
 import ua.kek.dobriy_kot.startvk.R;
 import ua.kek.dobriy_kot.startvk.model.view.NewsItemHeaderViewModel;
 
 public class NewsItemHeaderHolder extends BaseViewHolder<NewsItemHeaderViewModel> {
 //    @BindView(R.id.civ_profile_image)
-    private CircleImageView civProfileImage;
+    CircleImageView civProfileImage;
 
-    private TextView tvName;
-
-    private ImageView ivRepostedIcon;
-
-    private TextView tvRepostedProfileName;
+//    @BindView(R.id.tv_reposted_profile_name)
+    TextView tvName;
+//    @BindView(R.id.iv_reposted_icon)
+    ImageView ivRepostedIcon;
+//    @BindView(R.id.tv_reposted_profile_name)
+    TextView tvRepostedProfileName;
 
     public NewsItemHeaderHolder(View itemView) {
         super(itemView);
-//        MyApplication.getApplicationComponent().inject(this);
-
-        civProfileImage = (CircleImageView) itemView.findViewById(R.id.civ_profile_image);
-        tvName = (TextView) itemView.findViewById(R.id.tv_profile_name);
-        ivRepostedIcon = (ImageView) itemView.findViewById(R.id.iv_reposted_icon);
-        tvRepostedProfileName = (TextView) itemView.findViewById(R.id.tv_reposted_profile_name);
+        MyApplication.getApplicationComponent().inject(this);
+        civProfileImage =  itemView.findViewById(R.id.civ_profile_image);
+        tvName = itemView.findViewById(R.id.tv_profile_name);
+        ivRepostedIcon = itemView.findViewById(R.id.iv_reposted_icon);
+        tvRepostedProfileName = itemView.findViewById(R.id.tv_reposted_profile_name);
 
     }
 

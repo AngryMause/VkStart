@@ -42,13 +42,13 @@ public class NewsItemFooterHolder extends BaseViewHolder<NewsItemFooterViewModel
         mContext = itemView.getContext();
         mResources = mContext.getResources();
 
-        tvDate = (TextView) itemView.findViewById(R.id.tv_date);
-        tvLikesIcon = (TextView) itemView.findViewById(R.id.tv_likes_icon);
-        tvLikesCount = (TextView) itemView.findViewById(R.id.tv_likes_count);
-        tvCommentsIcon = (TextView) itemView.findViewById(R.id.tv_comments_icon);
-        tvCommentsCount = (TextView) itemView.findViewById(R.id.tv_comments_count);
-        tvRepostIcon = (TextView) itemView.findViewById(R.id.tv_reposts_icon);
-        tvRepostsCount= (TextView) itemView.findViewById(R.id.tv_reposts_count);
+        tvDate =  itemView.findViewById(R.id.tv_date);
+        tvLikesIcon =  itemView.findViewById(R.id.tv_likes_icon);
+        tvLikesCount =  itemView.findViewById(R.id.tv_likes_count);
+        tvCommentsIcon =  itemView.findViewById(R.id.tv_comments_icon);
+        tvCommentsCount =  itemView.findViewById(R.id.tv_comments_count);
+        tvRepostIcon = itemView.findViewById(R.id.tv_reposts_icon);
+        tvRepostsCount=  itemView.findViewById(R.id.tv_reposts_count);
 
         tvLikesIcon.setTypeface(mGoogleFontTypeface);
         tvCommentsIcon.setTypeface(mGoogleFontTypeface);
@@ -89,7 +89,6 @@ public class NewsItemFooterHolder extends BaseViewHolder<NewsItemFooterViewModel
 
     @Override
     public void unbindViewHolder() {
-
         tvDate.setText(null);
         tvLikesCount.setText(null);
         tvCommentsCount.setText(null);

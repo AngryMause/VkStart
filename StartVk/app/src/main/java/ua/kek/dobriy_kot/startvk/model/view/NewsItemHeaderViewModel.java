@@ -3,7 +3,7 @@ package ua.kek.dobriy_kot.startvk.model.view;
 
 import android.view.View;
 
-import ua.kek.dobriy_kot.startvk.model.WallItem;
+import ua.kek.dobriy_kot.startvk.entity.WallItem;
 import ua.kek.dobriy_kot.startvk.ui.holder.BaseViewHolder;
 import ua.kek.dobriy_kot.startvk.ui.holder.NewsItemHeaderHolder;
 

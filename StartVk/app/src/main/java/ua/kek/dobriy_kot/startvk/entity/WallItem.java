@@ -1,4 +1,4 @@
-package ua.kek.dobriy_kot.startvk.model;
+package ua.kek.dobriy_kot.startvk.entity;
 
 
 import com.google.gson.annotations.Expose;
@@ -7,11 +7,6 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 
-import ua.kek.dobriy_kot.startvk.model.Comments;
-import ua.kek.dobriy_kot.startvk.model.Likes;
-import ua.kek.dobriy_kot.startvk.model.PostSource;
-import ua.kek.dobriy_kot.startvk.model.Reposts;
-import ua.kek.dobriy_kot.startvk.model.Views;
 import ua.kek.dobriy_kot.startvk.model.attachment.ApiAttachment;
 
 public class WallItem {
